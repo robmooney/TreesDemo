@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E29CC46315A5E39600A29647 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29CC46215A5E39600A29647 /* UIKit.framework */; };
+		E29CC46515A5E39600A29647 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29CC46415A5E39600A29647 /* Foundation.framework */; };
+		E29CC46715A5E39600A29647 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29CC46615A5E39600A29647 /* CoreGraphics.framework */; };
+		E29CC46D15A5E39600A29647 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E29CC46B15A5E39600A29647 /* InfoPlist.strings */; };
+		E29CC46F15A5E39600A29647 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E29CC46E15A5E39600A29647 /* main.m */; };
+		E29CC47315A5E39600A29647 /* RMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E29CC47215A5E39600A29647 /* RMAppDelegate.m */; };
+		E29CC47615A5E39600A29647 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29CC47415A5E39600A29647 /* MainStoryboard.storyboard */; };
+		E29CC47915A5E39600A29647 /* RMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29CC47815A5E39600A29647 /* RMViewController.m */; };
+		E29CC48115A5E39600A29647 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29CC48015A5E39600A29647 /* SenTestingKit.framework */; };
+		E29CC48215A5E39600A29647 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29CC46215A5E39600A29647 /* UIKit.framework */; };
+		E29CC48315A5E39600A29647 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29CC46415A5E39600A29647 /* Foundation.framework */; };
+		E29CC48B15A5E39600A29647 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E29CC48915A5E39600A29647 /* InfoPlist.strings */; };
+		E29CC48E15A5E39600A29647 /* TreeSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E29CC48D15A5E39600A29647 /* TreeSearchTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E29CC48415A5E39600A29647 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E29CC45515A5E39500A29647 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E29CC45D15A5E39600A29647;
+			remoteInfo = TreeSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E29CC45E15A5E39600A29647 /* TreeSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E29CC46215A5E39600A29647 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E29CC46415A5E39600A29647 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E29CC46615A5E39600A29647 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E29CC46A15A5E39600A29647 /* TreeSearch-Info.plist */ = {isa = PBXFileReference; path = "TreeSearch-Info.plist"; sourceTree = "<group>"; };
+		E29CC46C15A5E39600A29647 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E29CC46E15A5E39600A29647 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E29CC47015A5E39600A29647 /* TreeSearch-Prefix.pch */ = {isa = PBXFileReference; path = "TreeSearch-Prefix.pch"; sourceTree = "<group>"; };
+		E29CC47115A5E39600A29647 /* RMAppDelegate.h */ = {isa = PBXFileReference; path = RMAppDelegate.h; sourceTree = "<group>"; };
+		E29CC47215A5E39600A29647 /* RMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMAppDelegate.m; sourceTree = "<group>"; };
+		E29CC47515A5E39600A29647 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E29CC47715A5E39600A29647 /* RMViewController.h */ = {isa = PBXFileReference; path = RMViewController.h; sourceTree = "<group>"; };
+		E29CC47815A5E39600A29647 /* RMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMViewController.m; sourceTree = "<group>"; };
+		E29CC47F15A5E39600A29647 /* TreeSearchTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreeSearchTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E29CC48015A5E39600A29647 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E29CC48815A5E39600A29647 /* TreeSearchTests-Info.plist */ = {isa = PBXFileReference; path = "TreeSearchTests-Info.plist"; sourceTree = "<group>"; };
+		E29CC48A15A5E39600A29647 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E29CC48C15A5E39600A29647 /* TreeSearchTests.h */ = {isa = PBXFileReference; path = TreeSearchTests.h; sourceTree = "<group>"; };
+		E29CC48D15A5E39600A29647 /* TreeSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreeSearchTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E29CC45B15A5E39600A29647 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29CC46315A5E39600A29647 /* UIKit.framework in Frameworks */,
+				E29CC46515A5E39600A29647 /* Foundation.framework in Frameworks */,
+				E29CC46715A5E39600A29647 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E29CC47B15A5E39600A29647 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29CC48115A5E39600A29647 /* SenTestingKit.framework in Frameworks */,
+				E29CC48215A5E39600A29647 /* UIKit.framework in Frameworks */,
+				E29CC48315A5E39600A29647 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E29CC45315A5E39500A29647 = {
+			isa = PBXGroup;
+			children = (
+				E29CC46815A5E39600A29647 /* TreeSearch */,
+				E29CC48615A5E39600A29647 /* TreeSearchTests */,
+				E29CC46115A5E39600A29647 /* Frameworks */,
+				E29CC45F15A5E39600A29647 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E29CC45F15A5E39600A29647 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E29CC45E15A5E39600A29647 /* TreeSearch.app */,
+				E29CC47F15A5E39600A29647 /* TreeSearchTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E29CC46115A5E39600A29647 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E29CC46215A5E39600A29647 /* UIKit.framework */,
+				E29CC46415A5E39600A29647 /* Foundation.framework */,
+				E29CC46615A5E39600A29647 /* CoreGraphics.framework */,
+				E29CC48015A5E39600A29647 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E29CC46815A5E39600A29647 /* TreeSearch */ = {
+			isa = PBXGroup;
+			children = (
+				E29CC47115A5E39600A29647 /* RMAppDelegate.h */,
+				E29CC47215A5E39600A29647 /* RMAppDelegate.m */,
+				E29CC47415A5E39600A29647 /* MainStoryboard.storyboard */,
+				E29CC47715A5E39600A29647 /* RMViewController.h */,
+				E29CC47815A5E39600A29647 /* RMViewController.m */,
+				E29CC46915A5E39600A29647 /* Supporting Files */,
+			);
+			path = TreeSearch;
+			sourceTree = "<group>";
+		};
+		E29CC46915A5E39600A29647 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E29CC46A15A5E39600A29647 /* TreeSearch-Info.plist */,
+				E29CC46B15A5E39600A29647 /* InfoPlist.strings */,
+				E29CC46E15A5E39600A29647 /* main.m */,
+				E29CC47015A5E39600A29647 /* TreeSearch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E29CC48615A5E39600A29647 /* TreeSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				E29CC48C15A5E39600A29647 /* TreeSearchTests.h */,
+				E29CC48D15A5E39600A29647 /* TreeSearchTests.m */,
+				E29CC48715A5E39600A29647 /* Supporting Files */,
+			);
+			path = TreeSearchTests;
+			sourceTree = "<group>";
+		};
+		E29CC48715A5E39600A29647 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E29CC48815A5E39600A29647 /* TreeSearchTests-Info.plist */,
+				E29CC48915A5E39600A29647 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E29CC45D15A5E39600A29647 /* TreeSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E29CC49115A5E39600A29647 /* Build configuration list for PBXNativeTarget "TreeSearch" */;
+			buildPhases = (
+				E29CC45A15A5E39600A29647 /* Sources */,
+				E29CC45B15A5E39600A29647 /* Frameworks */,
+				E29CC45C15A5E39600A29647 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TreeSearch;
+			productName = TreeSearch;
+			productReference = E29CC45E15A5E39600A29647 /* TreeSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E29CC47E15A5E39600A29647 /* TreeSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E29CC49415A5E39600A29647 /* Build configuration list for PBXNativeTarget "TreeSearchTests" */;
+			buildPhases = (
+				E29CC47A15A5E39600A29647 /* Sources */,
+				E29CC47B15A5E39600A29647 /* Frameworks */,
+				E29CC47C15A5E39600A29647 /* Resources */,
+				E29CC47D15A5E39600A29647 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E29CC48515A5E39600A29647 /* PBXTargetDependency */,
+			);
+			name = TreeSearchTests;
+			productName = TreeSearchTests;
+			productReference = E29CC47F15A5E39600A29647 /* TreeSearchTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E29CC45515A5E39500A29647 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RM;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Robert Mooney";
+			};
+			buildConfigurationList = E29CC45815A5E39500A29647 /* Build configuration list for PBXProject "TreeSearch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E29CC45315A5E39500A29647;
+			productRefGroup = E29CC45F15A5E39600A29647 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E29CC45D15A5E39600A29647 /* TreeSearch */,
+				E29CC47E15A5E39600A29647 /* TreeSearchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E29CC45C15A5E39600A29647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29CC46D15A5E39600A29647 /* InfoPlist.strings in Resources */,
+				E29CC47615A5E39600A29647 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E29CC47C15A5E39600A29647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29CC48B15A5E39600A29647 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E29CC47D15A5E39600A29647 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E29CC45A15A5E39600A29647 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29CC46F15A5E39600A29647 /* main.m in Sources */,
+				E29CC47315A5E39600A29647 /* RMAppDelegate.m in Sources */,
+				E29CC47915A5E39600A29647 /* RMViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E29CC47A15A5E39600A29647 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29CC48E15A5E39600A29647 /* TreeSearchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E29CC48515A5E39600A29647 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E29CC45D15A5E39600A29647 /* TreeSearch */;
+			targetProxy = E29CC48415A5E39600A29647 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E29CC46B15A5E39600A29647 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E29CC46C15A5E39600A29647 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E29CC47415A5E39600A29647 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E29CC47515A5E39600A29647 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		E29CC48915A5E39600A29647 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E29CC48A15A5E39600A29647 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E29CC48F15A5E39600A29647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E29CC49015A5E39600A29647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E29CC49215A5E39600A29647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TreeSearch/TreeSearch-Prefix.pch";
+				INFOPLIST_FILE = "TreeSearch/TreeSearch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E29CC49315A5E39600A29647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TreeSearch/TreeSearch-Prefix.pch";
+				INFOPLIST_FILE = "TreeSearch/TreeSearch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E29CC49515A5E39600A29647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TreeSearch.app/TreeSearch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TreeSearch/TreeSearch-Prefix.pch";
+				INFOPLIST_FILE = "TreeSearchTests/TreeSearchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E29CC49615A5E39600A29647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TreeSearch.app/TreeSearch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TreeSearch/TreeSearch-Prefix.pch";
+				INFOPLIST_FILE = "TreeSearchTests/TreeSearchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E29CC45815A5E39500A29647 /* Build configuration list for PBXProject "TreeSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E29CC48F15A5E39600A29647 /* Debug */,
+				E29CC49015A5E39600A29647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E29CC49115A5E39600A29647 /* Build configuration list for PBXNativeTarget "TreeSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E29CC49215A5E39600A29647 /* Debug */,
+				E29CC49315A5E39600A29647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E29CC49415A5E39600A29647 /* Build configuration list for PBXNativeTarget "TreeSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E29CC49515A5E39600A29647 /* Debug */,
+				E29CC49615A5E39600A29647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E29CC45515A5E39500A29647 /* Project object */;
+}
