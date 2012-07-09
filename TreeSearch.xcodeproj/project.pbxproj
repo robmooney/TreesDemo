@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E29CC45E15A5E39600A29647 /* TreeSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E29CC45E15A5E39600A29647 /* Trees.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trees.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29CC46215A5E39600A29647 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E29CC46415A5E39600A29647 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E29CC46615A5E39600A29647 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -97,7 +97,7 @@
 		E29CC45F15A5E39600A29647 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E29CC45E15A5E39600A29647 /* TreeSearch.app */,
+				E29CC45E15A5E39600A29647 /* Trees.app */,
 				E29CC47F15A5E39600A29647 /* TreeSearchTests.octest */,
 			);
 			name = Products;
@@ -177,7 +177,7 @@
 			);
 			name = Trees;
 			productName = TreeSearch;
-			productReference = E29CC45E15A5E39600A29647 /* TreeSearch.app */;
+			productReference = E29CC45E15A5E39600A29647 /* Trees.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E29CC47E15A5E39600A29647 /* TreeSearchTests */ = {

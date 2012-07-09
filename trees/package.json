@@ -1,0 +1,12 @@
+{
+	"name": "trees",
+	"version": "0.0.1",
+	"engines": {
+		"node": "0.6.x",
+		"npm": "1.0.x"
+	},
+	"dependencies": {
+		"pg": "0.6.x",		
+		"express": "2.5.x"
+	}
+}
