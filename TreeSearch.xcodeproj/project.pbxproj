@@ -22,6 +22,8 @@
 		E29CC48E15A5E39600A29647 /* TreeSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E29CC48D15A5E39600A29647 /* TreeSearchTests.m */; };
 		E29CC49815A5E3E100A29647 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29CC49715A5E3E100A29647 /* MapKit.framework */; };
 		E29CC49B15A5EF1E00A29647 /* RMTree.m in Sources */ = {isa = PBXBuildFile; fileRef = E29CC49A15A5EF1E00A29647 /* RMTree.m */; };
+		E2CC502D15AB8A5600EC4F1A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E2CC502C15AB8A5600EC4F1A /* Icon.png */; };
+		E2CC502F15AB8A5D00EC4F1A /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2CC502E15AB8A5D00EC4F1A /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		E29CC49715A5E3E100A29647 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E29CC49915A5EF1E00A29647 /* RMTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTree.h; sourceTree = "<group>"; };
 		E29CC49A15A5EF1E00A29647 /* RMTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMTree.m; sourceTree = "<group>"; };
+		E2CC502C15AB8A5600EC4F1A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		E2CC502E15AB8A5D00EC4F1A /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 		E29CC45315A5E39500A29647 = {
 			isa = PBXGroup;
 			children = (
+				E2CC502E15AB8A5D00EC4F1A /* Icon@2x.png */,
+				E2CC502C15AB8A5600EC4F1A /* Icon.png */,
 				E29CC46815A5E39600A29647 /* TreeSearch */,
 				E29CC48615A5E39600A29647 /* TreeSearchTests */,
 				E29CC46115A5E39600A29647 /* Frameworks */,
@@ -234,6 +240,8 @@
 			files = (
 				E29CC46D15A5E39600A29647 /* InfoPlist.strings in Resources */,
 				E29CC47615A5E39600A29647 /* MainStoryboard.storyboard in Resources */,
+				E2CC502D15AB8A5600EC4F1A /* Icon.png in Resources */,
+				E2CC502F15AB8A5D00EC4F1A /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
