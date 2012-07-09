@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface RMViewController : UIViewController
+@interface RMViewController : UIViewController <UISearchBarDelegate, MKMapViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (copy, nonatomic) NSArray *trees;
 
 @end

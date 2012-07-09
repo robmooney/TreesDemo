@@ -20,6 +20,8 @@
 		E29CC48315A5E39600A29647 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29CC46415A5E39600A29647 /* Foundation.framework */; };
 		E29CC48B15A5E39600A29647 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E29CC48915A5E39600A29647 /* InfoPlist.strings */; };
 		E29CC48E15A5E39600A29647 /* TreeSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E29CC48D15A5E39600A29647 /* TreeSearchTests.m */; };
+		E29CC49815A5E3E100A29647 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29CC49715A5E3E100A29647 /* MapKit.framework */; };
+		E29CC49B15A5EF1E00A29647 /* RMTree.m in Sources */ = {isa = PBXBuildFile; fileRef = E29CC49A15A5EF1E00A29647 /* RMTree.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,21 +39,24 @@
 		E29CC46215A5E39600A29647 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E29CC46415A5E39600A29647 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E29CC46615A5E39600A29647 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E29CC46A15A5E39600A29647 /* TreeSearch-Info.plist */ = {isa = PBXFileReference; path = "TreeSearch-Info.plist"; sourceTree = "<group>"; };
+		E29CC46A15A5E39600A29647 /* TreeSearch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TreeSearch-Info.plist"; sourceTree = "<group>"; };
 		E29CC46C15A5E39600A29647 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E29CC46E15A5E39600A29647 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E29CC47015A5E39600A29647 /* TreeSearch-Prefix.pch */ = {isa = PBXFileReference; path = "TreeSearch-Prefix.pch"; sourceTree = "<group>"; };
-		E29CC47115A5E39600A29647 /* RMAppDelegate.h */ = {isa = PBXFileReference; path = RMAppDelegate.h; sourceTree = "<group>"; };
+		E29CC47015A5E39600A29647 /* TreeSearch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TreeSearch-Prefix.pch"; sourceTree = "<group>"; };
+		E29CC47115A5E39600A29647 /* RMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMAppDelegate.h; sourceTree = "<group>"; };
 		E29CC47215A5E39600A29647 /* RMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMAppDelegate.m; sourceTree = "<group>"; };
 		E29CC47515A5E39600A29647 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		E29CC47715A5E39600A29647 /* RMViewController.h */ = {isa = PBXFileReference; path = RMViewController.h; sourceTree = "<group>"; };
+		E29CC47715A5E39600A29647 /* RMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMViewController.h; sourceTree = "<group>"; };
 		E29CC47815A5E39600A29647 /* RMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMViewController.m; sourceTree = "<group>"; };
 		E29CC47F15A5E39600A29647 /* TreeSearchTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreeSearchTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29CC48015A5E39600A29647 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		E29CC48815A5E39600A29647 /* TreeSearchTests-Info.plist */ = {isa = PBXFileReference; path = "TreeSearchTests-Info.plist"; sourceTree = "<group>"; };
+		E29CC48815A5E39600A29647 /* TreeSearchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TreeSearchTests-Info.plist"; sourceTree = "<group>"; };
 		E29CC48A15A5E39600A29647 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E29CC48C15A5E39600A29647 /* TreeSearchTests.h */ = {isa = PBXFileReference; path = TreeSearchTests.h; sourceTree = "<group>"; };
+		E29CC48C15A5E39600A29647 /* TreeSearchTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TreeSearchTests.h; sourceTree = "<group>"; };
 		E29CC48D15A5E39600A29647 /* TreeSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreeSearchTests.m; sourceTree = "<group>"; };
+		E29CC49715A5E3E100A29647 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E29CC49915A5EF1E00A29647 /* RMTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTree.h; sourceTree = "<group>"; };
+		E29CC49A15A5EF1E00A29647 /* RMTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMTree.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E29CC49815A5E3E100A29647 /* MapKit.framework in Frameworks */,
 				E29CC46315A5E39600A29647 /* UIKit.framework in Frameworks */,
 				E29CC46515A5E39600A29647 /* Foundation.framework in Frameworks */,
 				E29CC46715A5E39600A29647 /* CoreGraphics.framework in Frameworks */,
@@ -100,6 +106,7 @@
 		E29CC46115A5E39600A29647 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E29CC49715A5E3E100A29647 /* MapKit.framework */,
 				E29CC46215A5E39600A29647 /* UIKit.framework */,
 				E29CC46415A5E39600A29647 /* Foundation.framework */,
 				E29CC46615A5E39600A29647 /* CoreGraphics.framework */,
@@ -117,6 +124,8 @@
 				E29CC47715A5E39600A29647 /* RMViewController.h */,
 				E29CC47815A5E39600A29647 /* RMViewController.m */,
 				E29CC46915A5E39600A29647 /* Supporting Files */,
+				E29CC49915A5EF1E00A29647 /* RMTree.h */,
+				E29CC49A15A5EF1E00A29647 /* RMTree.m */,
 			);
 			path = TreeSearch;
 			sourceTree = "<group>";
@@ -262,6 +271,7 @@
 				E29CC46F15A5E39600A29647 /* main.m in Sources */,
 				E29CC47315A5E39600A29647 /* RMAppDelegate.m in Sources */,
 				E29CC47915A5E39600A29647 /* RMViewController.m in Sources */,
+				E29CC49B15A5EF1E00A29647 /* RMTree.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
