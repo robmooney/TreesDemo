@@ -163,9 +163,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E29CC45D15A5E39600A29647 /* TreeSearch */ = {
+		E29CC45D15A5E39600A29647 /* Trees */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E29CC49115A5E39600A29647 /* Build configuration list for PBXNativeTarget "TreeSearch" */;
+			buildConfigurationList = E29CC49115A5E39600A29647 /* Build configuration list for PBXNativeTarget "Trees" */;
 			buildPhases = (
 				E29CC45A15A5E39600A29647 /* Sources */,
 				E29CC45B15A5E39600A29647 /* Frameworks */,
@@ -175,7 +175,7 @@
 			);
 			dependencies = (
 			);
-			name = TreeSearch;
+			name = Trees;
 			productName = TreeSearch;
 			productReference = E29CC45E15A5E39600A29647 /* TreeSearch.app */;
 			productType = "com.apple.product-type.application";
@@ -221,7 +221,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E29CC45D15A5E39600A29647 /* TreeSearch */,
+				E29CC45D15A5E39600A29647 /* Trees */,
 				E29CC47E15A5E39600A29647 /* TreeSearchTests */,
 			);
 		};
@@ -288,7 +288,7 @@
 /* Begin PBXTargetDependency section */
 		E29CC48515A5E39600A29647 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E29CC45D15A5E39600A29647 /* TreeSearch */;
+			target = E29CC45D15A5E39600A29647 /* Trees */;
 			targetProxy = E29CC48415A5E39600A29647 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -434,13 +434,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E29CC49115A5E39600A29647 /* Build configuration list for PBXNativeTarget "TreeSearch" */ = {
+		E29CC49115A5E39600A29647 /* Build configuration list for PBXNativeTarget "Trees" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E29CC49215A5E39600A29647 /* Debug */,
 				E29CC49315A5E39600A29647 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E29CC49415A5E39600A29647 /* Build configuration list for PBXNativeTarget "TreeSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +450,7 @@
 				E29CC49615A5E39600A29647 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
