@@ -1,50 +1,144 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="XlU-dV-UrU">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="5">
+        <!--List View Controller-->
+        <scene sceneID="kD0-xu-Vkf">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
-                <viewController id="2" customClass="RMViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EpH-yN-Pt4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="X4U-zi-h0H" customClass="RMListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="npb-2L-agi">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="satellite" id="iVR-0m-lP9">
-                                <rect key="frame" x="0.0" y="44" width="320" height="416"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="NOZ-Wb-BxJ">
+                                <rect key="frame" x="0.0" y="44" width="320" height="367"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.80000000000000004" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="6L8-0i-Wnt" detailTextLabel="P2m-ko-A1Y" style="IBUITableViewCellStyleSubtitle" id="xRy-L7-aVc">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6L8-0i-Wnt">
+                                                    <rect key="frame" x="10" y="2" width="38" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P2m-ko-A1Y">
+                                                    <rect key="frame" x="10" y="24" width="47" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.54901963470000004" green="0.78431379800000001" blue="0.2941176593" alpha="1" colorSpace="deviceRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <outlet property="delegate" destination="2" id="cIo-Gq-UoG"/>
+                                    <outlet property="dataSource" destination="X4U-zi-h0H" id="veO-IV-Bwz"/>
+                                    <outlet property="delegate" destination="X4U-zi-h0H" id="OSd-Qm-55j"/>
                                 </connections>
-                            </mapView>
-                            <searchBar contentMode="redraw" placeholder="Search for Trees" id="aKS-Q4-Acc">
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" id="SYU-7a-9pu">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.27450980390000002" green="0.28235294119999998" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
-                                <connections>
-                                    <outlet property="delegate" destination="2" id="iHy-6H-u4o"/>
-                                </connections>
-                            </searchBar>
+                                <color key="tintColor" red="0.20000001789999999" green="0.20392158630000001" blue="0.1764705926" alpha="1" colorSpace="deviceRGB"/>
+                                <items>
+                                    <navigationItem title="Featured Trees" id="Us3-jb-IvV"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="KDi-ej-1lU"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="mapView" destination="iVR-0m-lP9" id="M0d-sV-JjB"/>
-                        <outlet property="searchBar" destination="aKS-Q4-Acc" id="83u-gB-IHF"/>
+                        <outlet property="tableView" destination="NOZ-Wb-BxJ" id="XOS-Ye-N1J"/>
                     </connections>
                 </viewController>
             </objects>
+            <point key="canvasLocation" x="382" y="-651"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="emw-pk-52n">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WDt-Xa-wW1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="SDA-aG-HuO" customClass="RMSearchViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HBP-mv-PlI">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Search for Trees" id="aKS-Q4-Acc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.20000001789999999" green="0.20392158630000001" blue="0.1764705926" alpha="1" colorSpace="deviceRGB"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                <connections>
+                                    <outlet property="delegate" destination="SDA-aG-HuO" id="UgA-p5-aoY"/>
+                                </connections>
+                            </searchBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="satellite" id="iVR-0m-lP9">
+                                <rect key="frame" x="0.0" y="44" width="320" height="367"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="SDA-aG-HuO" id="8MU-6H-EdD"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="k1d-ae-g2x"/>
+                    <connections>
+                        <outlet property="mapView" destination="iVR-0m-lP9" id="kbQ-WM-IIe"/>
+                        <outlet property="searchBar" destination="aKS-Q4-Acc" id="NmV-WI-VDy"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="382" y="-80"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="6hW-b7-2tn">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="loc-sZ-fcC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController definesPresentationContext="YES" id="XlU-dV-UrU" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="OdQ-nC-4jJ">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.20000001788139343" green="0.20392158627510071" blue="0.17647059261798859" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="selectedImageTintColor" red="0.54901963472366333" green="0.78431379795074463" blue="0.29411765933036804" alpha="1" colorSpace="deviceRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="X4U-zi-h0H" kind="relationship" relationship="viewControllers" id="cW8-bq-nNp"/>
+                        <segue destination="SDA-aG-HuO" kind="relationship" relationship="viewControllers" id="bxT-gN-YAP"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="-152" y="-362"/>
         </scene>
     </scenes>
     <classes>
-        <class className="RMViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/RMViewController.h"/>
+        <class className="RMListViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RMListViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="RMSearchViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RMSearchViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
                 <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E212EC6015AC324F0081AB62 /* RMListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E212EC5F15AC324F0081AB62 /* RMListViewController.m */; };
 		E29CC46315A5E39600A29647 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29CC46215A5E39600A29647 /* UIKit.framework */; };
 		E29CC46515A5E39600A29647 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29CC46415A5E39600A29647 /* Foundation.framework */; };
 		E29CC46715A5E39600A29647 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29CC46615A5E39600A29647 /* CoreGraphics.framework */; };
@@ -14,7 +15,7 @@
 		E29CC46F15A5E39600A29647 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E29CC46E15A5E39600A29647 /* main.m */; };
 		E29CC47315A5E39600A29647 /* RMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E29CC47215A5E39600A29647 /* RMAppDelegate.m */; };
 		E29CC47615A5E39600A29647 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29CC47415A5E39600A29647 /* MainStoryboard.storyboard */; };
-		E29CC47915A5E39600A29647 /* RMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29CC47815A5E39600A29647 /* RMViewController.m */; };
+		E29CC47915A5E39600A29647 /* RMSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E29CC47815A5E39600A29647 /* RMSearchViewController.m */; };
 		E29CC48115A5E39600A29647 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29CC48015A5E39600A29647 /* SenTestingKit.framework */; };
 		E29CC48215A5E39600A29647 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29CC46215A5E39600A29647 /* UIKit.framework */; };
 		E29CC48315A5E39600A29647 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E29CC46415A5E39600A29647 /* Foundation.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E212EC5E15AC324F0081AB62 /* RMListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMListViewController.h; sourceTree = "<group>"; };
+		E212EC5F15AC324F0081AB62 /* RMListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMListViewController.m; sourceTree = "<group>"; };
 		E29CC45E15A5E39600A29647 /* Trees.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trees.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29CC46215A5E39600A29647 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E29CC46415A5E39600A29647 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,8 +51,8 @@
 		E29CC47115A5E39600A29647 /* RMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMAppDelegate.h; sourceTree = "<group>"; };
 		E29CC47215A5E39600A29647 /* RMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMAppDelegate.m; sourceTree = "<group>"; };
 		E29CC47515A5E39600A29647 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		E29CC47715A5E39600A29647 /* RMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMViewController.h; sourceTree = "<group>"; };
-		E29CC47815A5E39600A29647 /* RMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMViewController.m; sourceTree = "<group>"; };
+		E29CC47715A5E39600A29647 /* RMSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMSearchViewController.h; sourceTree = "<group>"; };
+		E29CC47815A5E39600A29647 /* RMSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMSearchViewController.m; sourceTree = "<group>"; };
 		E29CC47F15A5E39600A29647 /* TreeSearchTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreeSearchTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29CC48015A5E39600A29647 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		E29CC48815A5E39600A29647 /* TreeSearchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TreeSearchTests-Info.plist"; sourceTree = "<group>"; };
@@ -127,11 +130,13 @@
 				E29CC47115A5E39600A29647 /* RMAppDelegate.h */,
 				E29CC47215A5E39600A29647 /* RMAppDelegate.m */,
 				E29CC47415A5E39600A29647 /* MainStoryboard.storyboard */,
-				E29CC47715A5E39600A29647 /* RMViewController.h */,
-				E29CC47815A5E39600A29647 /* RMViewController.m */,
+				E29CC47715A5E39600A29647 /* RMSearchViewController.h */,
+				E29CC47815A5E39600A29647 /* RMSearchViewController.m */,
 				E29CC46915A5E39600A29647 /* Supporting Files */,
 				E29CC49915A5EF1E00A29647 /* RMTree.h */,
 				E29CC49A15A5EF1E00A29647 /* RMTree.m */,
+				E212EC5E15AC324F0081AB62 /* RMListViewController.h */,
+				E212EC5F15AC324F0081AB62 /* RMListViewController.m */,
 			);
 			path = TreeSearch;
 			sourceTree = "<group>";
@@ -278,8 +283,9 @@
 			files = (
 				E29CC46F15A5E39600A29647 /* main.m in Sources */,
 				E29CC47315A5E39600A29647 /* RMAppDelegate.m in Sources */,
-				E29CC47915A5E39600A29647 /* RMViewController.m in Sources */,
+				E29CC47915A5E39600A29647 /* RMSearchViewController.m in Sources */,
 				E29CC49B15A5EF1E00A29647 /* RMTree.m in Sources */,
+				E212EC6015AC324F0081AB62 /* RMListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
