@@ -1,22 +1,22 @@
 //
-//  RMViewController.m
+//  RMSearchViewController.m
 //  TreeSearch
 //
 //  Created by Robert Mooney on 05/07/2012.
 //  Copyright (c) 2012 Robert Mooney. All rights reserved.
 //
 
-#import "RMViewController.h"
+#import "RMSearchViewController.h"
 #import "RMTree.h"
 
-@interface RMViewController () <NSURLConnectionDataDelegate>
+@interface RMSearchViewController () <NSURLConnectionDataDelegate, UIGestureRecognizerDelegate>
 
 @property (strong, nonatomic) NSURLConnection *connection;
 @property (strong, nonatomic) NSMutableData *data;
 
 @end
 
-@implementation RMViewController
+@implementation RMSearchViewController
 
 @synthesize searchBar = _searchBar;
 @synthesize mapView = _mapView;
@@ -30,7 +30,11 @@
     [super viewDidLoad];
     
     self.mapView.region = MKCoordinateRegionMake((CLLocationCoordinate2D){53.408, -6.267}, MKCoordinateSpanMake(0.05, 0.05));
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard:)];
+    tapGestureRecognizer.delegate = self;
+    
+    [self.mapView addGestureRecognizer:tapGestureRecognizer];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -49,7 +53,7 @@
 {
     [searchBar resignFirstResponder];
     
-    NSString *URLString = [NSString stringWithFormat:@"http://localhost:5000/search?tree=%@&lat=%f&lon=%f&latspan=%f&lonspan=%f", [searchBar.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding], self.mapView.region.center.latitude, self.mapView.region.center.longitude, self.mapView.region.span.latitudeDelta, self.mapView.region.span.longitudeDelta];
+    NSString *URLString = [NSString stringWithFormat:@"http://localhost:3000/search?tree=%@&lat=%f&lon=%f&latspan=%f&lonspan=%f", [searchBar.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding], self.mapView.region.center.latitude, self.mapView.region.center.longitude, self.mapView.region.span.latitudeDelta, self.mapView.region.span.longitudeDelta];
     
     NSLog(@"%@", URLString);
     
@@ -60,6 +64,20 @@
     
     self.data = [NSMutableData data];
     self.connection = [NSURLConnection connectionWithRequest:request delegate:self];
+}
+
+#pragma mark - Actions
+
+- (IBAction)hideKeyboard:(id)sender
+{
+    [self.searchBar resignFirstResponder];
+}
+
+#pragma mark - Gesture recognizer delegate
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+{
+    return self.searchBar.isFirstResponder;
 }
 
 #pragma mark - Map view delegate
