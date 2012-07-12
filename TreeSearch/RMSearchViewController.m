@@ -9,6 +9,8 @@
 #import "RMSearchViewController.h"
 #import "RMTree.h"
 
+#define SERVER_HOST @"http://localhost:3000"
+
 @interface RMSearchViewController () <NSURLConnectionDataDelegate, UIGestureRecognizerDelegate>
 
 @property (strong, nonatomic) NSURLConnection *connection;
@@ -53,13 +55,11 @@
 {
     [searchBar resignFirstResponder];
     
-    NSString *URLString = [NSString stringWithFormat:@"http://localhost:3000/search?tree=%@&lat=%f&lon=%f&latspan=%f&lonspan=%f", [searchBar.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding], self.mapView.region.center.latitude, self.mapView.region.center.longitude, self.mapView.region.span.latitudeDelta, self.mapView.region.span.longitudeDelta];
+    NSURL *serverURL = [NSURL URLWithString:SERVER_HOST];
     
-    NSLog(@"%@", URLString);
+    NSURL *searchURL = [serverURL URLByAppendingPathComponent:[NSString stringWithFormat:@"/search?tree=%@&lat=%f&lon=%f&latspan=%f&lonspan=%f", [searchBar.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding], self.mapView.region.center.latitude, self.mapView.region.center.longitude, self.mapView.region.span.latitudeDelta, self.mapView.region.span.longitudeDelta]];
     
-    NSURL *URL = [NSURL URLWithString:URLString];
-    
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:searchURL];
     request.HTTPShouldUsePipelining = YES;
     
     self.data = [NSMutableData data];

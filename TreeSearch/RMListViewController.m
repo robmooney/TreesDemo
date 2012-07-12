@@ -9,6 +9,8 @@
 #import "RMListViewController.h"
 #import "RMTree.h"
 
+#define SERVER_HOST @"http://localhost:3000"
+
 @interface RMListViewController () <NSURLConnectionDataDelegate>
 
 @property (strong, nonatomic) NSURLConnection *connection;
@@ -32,7 +34,7 @@
         self.trees = [NSMutableArray array];
     }
     
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://localhost:3000/"]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:SERVER_HOST]];
     request.HTTPShouldUsePipelining = YES;
     self.connection = [NSURLConnection connectionWithRequest:request delegate:self];
     
