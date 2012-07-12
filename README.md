@@ -25,4 +25,4 @@ You should now be able to run the app:
 
 	node trees.js
 
-In the iOS app change the SERVER_HOST #define if you want to use something other than localhost. You'll need to do this if you intend to run on a iOS device.
+The iOS app is set up to look for the server at localhost. To run on a device you will need to change this to the actual address of your server. Edit #define SERVER_HOST in RMListViewController.m and RMSearchViewController.m to do this.
