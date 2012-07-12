@@ -42,51 +42,16 @@ app.get("/search", function (req, res) {
 	}
 });
 
-
-// add handler for tree search
-
-// add 404 handler for everything else
-
-// listen for incoming requests
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 app.get("*", function (req, res) {
 	res.send("", 404);
 });
 
-app.listen(process.env.PORT || 3000);
-
-
-
-
-
-
-
+app.listen(3000);
 
 // list query implementation
 
 listTrees = function (callback) {
-	pg.connect(process.env.DATABASE_URL || "postgres://localhost:5432/Trees", function (err, client) {	
+	pg.connect("postgres://localhost:5432/Trees", function (err, client) {	
 	
 		var query = client.query("SELECT DISTINCT commonname, species FROM trees ORDER BY commonname");
 			
@@ -103,17 +68,10 @@ listTrees = function (callback) {
 	});	
 };
 
-
-
-
-
-
-
-
 // search query implementation
 
 searchTrees = function (tree, latitude, longitude, latSpan, lonSpan, callback) {
-	pg.connect(process.env.DATABASE_URL || "postgres://localhost:5432/Trees", function (err, client) {	
+	pg.connect("postgres://localhost:5432/Trees", function (err, client) {	
 	
 		var query = client.query("SELECT commonname, species, sitename, latitude, longitude FROM trees WHERE (latitude BETWEEN $1 AND $2) AND (longitude BETWEEN $3 AND $4) AND (commonname LIKE $5)", 
 			[latitude - (latSpan / 2), latitude + (latSpan / 2), longitude - (lonSpan / 2), longitude + (lonSpan / 2), "%" +tree]);

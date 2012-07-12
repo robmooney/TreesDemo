@@ -390,6 +390,7 @@
 		E2EF3C3D15AF1323002EC409 /* writer-tests.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "writer-tests.js"; sourceTree = "<group>"; };
 		E2EF3C3E15AF1323002EC409 /* wscript */ = {isa = PBXFileReference; lastKnownFileType = text; path = wscript; sourceTree = "<group>"; };
 		E2EF3C3F15AF1323002EC409 /* trees.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = trees.js; sourceTree = "<group>"; };
+		E2EF3C4115AF1368002EC409 /* Trees.sql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Trees.sql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -420,6 +421,7 @@
 		E29CC45315A5E39500A29647 = {
 			isa = PBXGroup;
 			children = (
+				E2EF3C4115AF1368002EC409 /* Trees.sql */,
 				E2EF3ABE15AF1323002EC409 /* node_modules */,
 				E2EF3C3F15AF1323002EC409 /* trees.js */,
 				E212EC6315AC3FF70081AB62 /* Default@2x.png */,
