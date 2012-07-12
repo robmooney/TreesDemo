@@ -57,7 +57,9 @@
     
     NSURL *serverURL = [NSURL URLWithString:SERVER_HOST];
     
-    NSURL *searchURL = [serverURL URLByAppendingPathComponent:[NSString stringWithFormat:@"/search?tree=%@&lat=%f&lon=%f&latspan=%f&lonspan=%f", [searchBar.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding], self.mapView.region.center.latitude, self.mapView.region.center.longitude, self.mapView.region.span.latitudeDelta, self.mapView.region.span.longitudeDelta]];
+    NSURL *searchURL = [NSURL URLWithString:[NSString stringWithFormat:@"search?tree=%@&lat=%f&lon=%f&latspan=%f&lonspan=%f", [searchBar.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding], self.mapView.region.center.latitude, self.mapView.region.center.longitude, self.mapView.region.span.latitudeDelta, self.mapView.region.span.longitudeDelta] relativeToURL:serverURL];
+    
+    NSLog(@"%@", searchURL);
     
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:searchURL];
     request.HTTPShouldUsePipelining = YES;
