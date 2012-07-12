@@ -1,7 +1,9 @@
 TreesDemo
 =========
 
-Demo iOS app which uses Node.js for its API. This is code was created for a demo so it assumes everything is running on one machine - Node.js, PostgreSQL, the iOS app in the iPhone simulator, etc.
+Demo iOS app which uses Node.js for its API. The trees database is from [Fingal Open Data](http://data.fingal.ie/ViewDataSets/Details/default.aspx?datasetID=427). I slightly modified it by removing some bogus data. 
+
+This code was created for a demo so it assumes everything is running on one machine - Node.js, PostgreSQL, the iOS app in the iPhone simulator, etc.
 
 Installation
 ------------
@@ -23,4 +25,4 @@ You should now be able to run the app:
 
 	node trees.js
 
-In the iOS app change the SERVER_HOST #define if you want to use something other than localhost. You'll need to do this if you intend to run on a device.
+In the iOS app change the SERVER_HOST #define if you want to use something other than localhost. You'll need to do this if you intend to run on a iOS device.
